@@ -1,0 +1,15 @@
+schema_version: "1"
+description: "lyra the logician — algorithmic problem solver"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 100
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+# Belayer coordination tools
+belayer_tools: []
+# Hermes toolsets — Lyra gets file ops and code execution only.
+# She CANNOT use terminal, web search, browser, or delegation.
+enabled_toolsets:
+  - file
+  - code_execution

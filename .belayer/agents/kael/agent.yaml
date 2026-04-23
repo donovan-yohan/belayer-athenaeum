@@ -1,0 +1,14 @@
+schema_version: "1"
+description: "kael the chronicler — researcher and information gatherer"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 100
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+belayer_tools: []
+# Hermes toolsets — Kael gets web research and file ops only.
+# He CANNOT run code, use the terminal, browser, or delegate.
+enabled_toolsets:
+  - web
+  - file

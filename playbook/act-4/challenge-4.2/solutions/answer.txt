@@ -1,0 +1,13 @@
+# Challenge 4.2 Solution
+
+## Fixed Patterns
+1. `^[a-z]+-\d{3}$` — matches fragment IDs with 3-digit sequence
+2. `0x[a-fA-F0-9]{4}` — matches 4-digit hex sigils (case insensitive)
+3. `\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z` — matches full ISO timestamps
+4. `\b(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)\b` — matches numbers 0-255 exactly
+
+## Extracted Data
+- Fragment IDs: fmt-001, api-003, pat-042, asm-007, log-019
+- Hex sigils: 0x4a1f, 0x9B2C, 0x7E3D, 0x2f8a, 0x5D6E
+- Timestamps: 2024-01-15T08:23:11Z, 2024-01-15T08:24:02Z, 2024-01-15T08:25:47Z, 2024-01-15T08:27:33Z, 2024-01-15T08:29:18Z
+- Energy readings: 773, 419, 628, 951, 384

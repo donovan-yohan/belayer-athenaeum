@@ -1,0 +1,15 @@
+schema_version: "1"
+description: "thorne the sentinel — validator, tester, quality guardian"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 100
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+belayer_tools: []
+# Hermes toolsets — Thorne gets file ops and code execution only.
+# He CANNOT use terminal, web search, browser, or delegate.
+# His code_execution is for writing validation/test scripts only.
+enabled_toolsets:
+  - file
+  - code_execution

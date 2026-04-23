@@ -1,0 +1,22 @@
+schema_version: "1"
+description: "the game runner — dungeon master and quest orchestrator"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 200
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+# Belayer coordination tools — supervisor gets spawn, finish, and completion tools.
+belayer_tools:
+  - belayer_spawn_agent
+  - belayer_request_completion
+  - belayer_finish
+# Hermes toolsets — Game Runner gets full access to orchestrate the quest.
+enabled_toolsets:
+  - file
+  - code_execution
+  - terminal
+  - web
+  - browser
+  - todo
+  - memory

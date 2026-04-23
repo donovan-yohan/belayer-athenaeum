@@ -1,0 +1,5 @@
+Longest resonant subarray:
+  Start index: 187
+  Length: 50
+  Sequence: [42, 137, 179, 60, 239, 43, 26, 69, 95, 164]... (first 10 shown)
+  Alignment checksum (XOR): 67

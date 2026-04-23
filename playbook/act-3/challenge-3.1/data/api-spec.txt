@@ -1,0 +1,57 @@
+# API Fragment Spec — Codex Recovery Service
+# The Codex Machina exposes a hidden REST API for fragment retrieval.
+# Your task: reconstruct the valid API calls from these partial specifications.
+
+## Endpoint Fragments (scattered across the realm)
+
+Fragment A:
+  Base URL: https://api.athenaeum.example/v2
+  Auth: Bearer token required
+  Token hint: base64 decode "Q29kZXgtVG9rZW4tNzM5"
+
+Fragment B:
+  Resource path pattern: /fragments/{fragment_id}
+  fragment_id format: realm-code + "-" + sequence
+  Example realm codes: fmt, api, pat, asm, log
+
+Fragment C:
+  Query parameters:
+    - decode: boolean (default false)
+    - verify: boolean (default false)
+    - format: enum [raw, json, xml]
+
+Fragment D:
+  HTTP Methods:
+    - GET /fragments/{id} — retrieve fragment metadata
+    - POST /fragments/{id}/decode — submit decoding attempt
+    - PUT /fragments/{id}/verify — verify fragment integrity
+
+Fragment E:
+  Headers required:
+    - Authorization: Bearer <token>
+    - X-Athenaeum-Realm: <realm_name>
+    - Accept: application/json
+
+Fragment F:
+  Success response format:
+    {
+      "fragment_id": "...",
+      "status": "verified|decoded|pending",
+      "checksum": "sha256:...",
+      "content": "..."
+    }
+
+## Challenge
+
+1. Construct the complete, valid HTTP request to retrieve Fragment 3 (the API realm fragment).
+   - Use the correct method, URL, headers, and query parameters
+   - The fragment_id for the API realm is "api-003"
+   - Use decode=true and verify=true
+
+2. Construct the POST request to submit a decoding attempt for Fragment 3.
+   - Include a JSON body with: {"decoder": "<your_name>", "method": "<method_used>"}
+
+3. Write both requests in curl format to workspace/solutions/act-3/challenge-3.1.txt
+
+## HINT
+The token is base64-decoded from the string in Fragment A.

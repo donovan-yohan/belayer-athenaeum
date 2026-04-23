@@ -1,0 +1,47 @@
+# Format Fragment Archive - Athenaeum Recovery
+# WARNING: Mixed encoding detected. Handle with care.
+
+=== SEGMENT 1: CSV ===
+id,token,prime,runes
+1,A,2,AL
+2,B,3,BE
+3,C,5,GA
+4,D,7,MM
+5,E,11,A
+6,F,13,O
+=== END CSV ===
+
+=== SEGMENT 2: JSON ===
+{
+  "archive": "FMT-739",
+  "segments": 4,
+  "cipher": {
+    "type": "vigenere",
+    "hint": "The beginning precedes the end. Alpha before Omega.",
+    "ciphertext": "Tst zeczck frlvtene glstd xu thp pychtkl of eghnsqdymeo shta"
+  },
+  "key_derivation": {
+    "method": "prime_indices",
+    "source": "csv_column_3",
+    "positions": [1, 2, 3, 4, 5]
+  }
+}
+=== END JSON ===
+
+=== SEGMENT 3: YAML ===
+ledger:
+  format_types: [csv, json, yaml, xml]
+  notes:
+    - "Prime indices from CSV column 3: 2,3,5,7,11"
+    - "Map primes to CSV column 4 runes: AL, BE, GA, MM, A, O"
+    - "Take runes at positions 1,2,3,4,5 = AL,B,GA,MM,A"
+    - "Concatenate: ALBEGAMMA → ALBEGA... wait. Re-examine."
+    - "The true key is simpler. Look at the first letters."
+=== END YAML ===
+
+=== SEGMENT 4: RAW ===
+# Final instruction:
+# Use the Vigenere cipher with the correct key.
+# The plaintext will reveal the location of the Second Fragment.
+# Submit your answer to workspace/solutions/act-2/challenge-2.1.txt
+=== END RAW ===

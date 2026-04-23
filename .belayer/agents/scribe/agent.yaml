@@ -1,0 +1,14 @@
+schema_version: "1"
+description: "the scribe — chronicler and observer"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 100
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+belayer_tools: []
+# Hermes toolsets — Scribe gets file ops ONLY.
+# He CANNOT run code, use terminal, web search, browser, or delegate.
+# He is a passive observer who writes narrative and reads workspace state.
+enabled_toolsets:
+  - file

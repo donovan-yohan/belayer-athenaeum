@@ -1,0 +1,9 @@
+schema_version: "1"
+description: "ward-echo"
+kind: side
+model: moonshotai/kimi-k2.6
+max_turns: 50
+max_duration: "30m"
+ephemeral: true
+workspace: inherit
+belayer_tools: []

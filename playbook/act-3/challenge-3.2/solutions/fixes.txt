@@ -1,0 +1,10 @@
+# Challenge 3.2 — Errors Found and Fixed
+
+1. **page minimum**: `minimum: 0` → `minimum: 1` (pages start at 1)
+2. **verify method**: `post` → `put` (verification is idempotent)
+3. **checksum format**: `format: uuid` → `format: sha256` (checksums are SHA-256)
+4. **realm enum**: `api` → `apis` (must match the query parameter enum)
+5. **content nullable**: `nullable: false` → `nullable: true` (content is null before decoding)
+6. **checksum pattern**: `{32}` → `{64}` (SHA-256 produces 64 hex characters)
+
+Total errors: 6

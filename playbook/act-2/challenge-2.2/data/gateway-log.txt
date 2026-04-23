@@ -1,0 +1,20 @@
+# Athenaeum Gateway Log - Fragment 2 Recovery
+# Parse all entries, extract (node, sigil) pairs, sort by node,
+# convert each 16-bit sigil to two ASCII characters (high byte first).
+# Concatenate to reveal the key phrase.
+
+[2024-01-15T08:23:00Z] JSON: {"event": "portal_pulse", "realm": "formats", "node": 3, "sigil": "0x5449"}
+[2024-01-15T08:25:00Z] CSV: 2024-01-15T08:25:00Z,portal_reopen,formats,2,0x4143
+[2024-01-15T08:27:00Z] YAML: event: portal_flare
+realm: formats
+node: 6
+sigil: 0x4c4c
+[2024-01-15T08:29:00Z] JSON: {"event": "portal_hum", "realm": "formats", "node": 4, "sigil": "0x5645"}
+[2024-01-15T08:31:00Z] CSV: 2024-01-15T08:31:00Z,portal_peak,formats,5,0x2041
+[2024-01-15T08:33:00Z] YAML: event: portal_stabilize
+realm: formats
+node: 1
+sigil: 0x5245
+[2024-01-15T08:35:00Z] JSON: {"event": "portal_open", "realm": "formats", "node": 7, "sigil": "0x2100"}
+
+# Submit the key phrase to workspace/solutions/act-2/challenge-2.2.txt

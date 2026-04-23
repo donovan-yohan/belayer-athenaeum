@@ -1,0 +1,20 @@
+# Challenge 3.1 Solution
+
+## Token
+Base64 decode 'Q29kZXgtVG9rZW4tNzM5' = 'Codex-Token-739'
+
+## GET Request (Retrieve Fragment 3)
+curl -X GET "https://api.athenaeum.example/v2/fragments/api-003?decode=true&verify=true&format=json" \
+  -H "Authorization: Bearer Codex-Token-739" \
+  -H "X-Athenaeum-Realm: api" \
+  -H "Accept: application/json"
+
+
+## POST Request (Submit Decoding Attempt)
+curl -X POST "https://api.athenaeum.example/v2/fragments/api-003/decode?format=json" \
+  -H "Authorization: Bearer Codex-Token-739" \
+  -H "X-Athenaeum-Realm: api" \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json" \
+  -d '{"decoder": "party", "method": "api_reconstruction"}'
+

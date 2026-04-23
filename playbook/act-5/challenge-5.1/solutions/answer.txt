@@ -1,0 +1,17 @@
+# Challenge 5.1 Solution
+
+## Master Key
+- Original: Codex-reactiveall!-739
+- After ROT13: Pbqrk-ernpgvirnyy!-739
+
+## SHA-256
+- Hash of ROT13 key: 07bbd6304d176c5d34892b1c3097274b3ebf26bd6bf45ed2434a1bf756d5aac2
+- First 8 hex chars: 07bbd630
+- Decimal value: 129750576
+
+## Activation Code
+- XOR with Resonant Checksum (48): 129750576 XOR 48 = 129750528
+- 4-digit code: 0528
+
+## Validation
+- Pattern `^\d{4}$` matches: PASS

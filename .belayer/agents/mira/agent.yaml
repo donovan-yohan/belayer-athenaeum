@@ -1,0 +1,15 @@
+schema_version: "1"
+description: "mira the mapper — data wrangler and format transformer"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 100
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+belayer_tools: []
+# Hermes toolsets — Mira gets file ops, code execution, and terminal.
+# She CANNOT use web search, browser, or delegate.
+enabled_toolsets:
+  - file
+  - code_execution
+  - terminal

@@ -1,0 +1,15 @@
+schema_version: "1"
+description: "zara the weaver — integrator and orchestrator"
+kind: main
+model: moonshotai/kimi-k2.6
+max_turns: 100
+max_duration: "2h"
+ephemeral: false
+workspace: inherit
+belayer_tools: []
+# Hermes toolsets — Zara gets file ops, code execution, and terminal.
+# She CANNOT use web search, browser, or delegate.
+enabled_toolsets:
+  - file
+  - code_execution
+  - terminal

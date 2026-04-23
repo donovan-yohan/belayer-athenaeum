@@ -1,0 +1,599 @@
+{
+  "nodes": [
+    {
+      "name": "Archive_Room",
+      "value": 27,
+      "connections": [
+        {
+          "to": "Chamber_1",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Star_Chart_Room",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber_1",
+      "value": 190,
+      "connections": [
+        {
+          "to": "Hallway_A",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Gallery_North",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Archive_Room",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Chamber_2",
+      "value": 71,
+      "connections": [
+        {
+          "to": "Hallway_B",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Gallery_South",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Scriptorium",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    },
+    {
+      "name": "Crystal_Cave",
+      "value": 60,
+      "connections": [
+        {
+          "to": "Laboratory",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Dungeon_Deep",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Dungeon_Deep",
+      "value": 56,
+      "connections": [
+        {
+          "to": "Dungeon_Entry",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Crystal_Cave",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Dungeon_Entry",
+      "value": 24,
+      "connections": [
+        {
+          "to": "Gallery_South",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Dungeon_Deep",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Entrance",
+      "value": 164,
+      "connections": [
+        {
+          "to": "Hallway_A",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Hallway_B",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    },
+    {
+      "name": "Gallery_North",
+      "value": 36,
+      "connections": [
+        {
+          "to": "Chamber_1",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Map_Room",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Base",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Gallery_South",
+      "value": 189,
+      "connections": [
+        {
+          "to": "Chamber_2",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Dungeon_Entry",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Mirror_Maze",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Guard_Post",
+      "value": 7,
+      "connections": [
+        {
+          "to": "Library",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Hallway_A",
+      "value": 29,
+      "connections": [
+        {
+          "to": "Entrance",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Chamber_1",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Passage_East",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Top",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    },
+    {
+      "name": "Hallway_B",
+      "value": 7,
+      "connections": [
+        {
+          "to": "Entrance",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Chamber_2",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Passage_West",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Laboratory",
+      "value": 140,
+      "connections": [
+        {
+          "to": "Passage_West",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Crystal_Cave",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Library",
+      "value": 23,
+      "connections": [
+        {
+          "to": "Passage_West",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Guard_Post",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    },
+    {
+      "name": "Map_Room",
+      "value": 152,
+      "connections": [
+        {
+          "to": "Gallery_North",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Mid",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Mirror_Maze",
+      "value": 130,
+      "connections": [
+        {
+          "to": "Gallery_South",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Riddle_Room",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Observatory",
+      "value": 229,
+      "connections": [
+        {
+          "to": "Passage_East",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Top",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Passage_East",
+      "value": 63,
+      "connections": [
+        {
+          "to": "Hallway_A",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Reliquary",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Observatory",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Passage_West",
+      "value": 58,
+      "connections": [
+        {
+          "to": "Hallway_B",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Laboratory",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Library",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Reliquary",
+      "value": 190,
+      "connections": [
+        {
+          "to": "Passage_East",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Sanctum",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Riddle_Room",
+      "value": 155,
+      "connections": [
+        {
+          "to": "Scriptorium",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Mirror_Maze",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Sanctum",
+      "value": 144,
+      "connections": [
+        {
+          "to": "Reliquary",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Scriptorium",
+      "value": 174,
+      "connections": [
+        {
+          "to": "Chamber_2",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Riddle_Room",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Star_Chart_Room",
+      "value": 51,
+      "connections": [
+        {
+          "to": "Archive_Room",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Tower_Base",
+      "value": 109,
+      "connections": [
+        {
+          "to": "Gallery_North",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Mid",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Tower_Mid",
+      "value": 9,
+      "connections": [
+        {
+          "to": "Map_Room",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Base",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Top",
+          "distance": 1,
+          "illusory": false
+        }
+      ]
+    },
+    {
+      "name": "Tower_Top",
+      "value": 8,
+      "connections": [
+        {
+          "to": "Observatory",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Mid",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Hallway_A",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    },
+    {
+      "name": "Vault",
+      "value": 167,
+      "connections": [
+        {
+          "to": "Vault_Antechamber",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Chamber_2",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        },
+        {
+          "to": "Library",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    },
+    {
+      "name": "Vault_Antechamber",
+      "value": 184,
+      "connections": [
+        {
+          "to": "Star_Chart_Room",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Sanctum",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Tower_Top",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Crystal_Cave",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Guard_Post",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Riddle_Room",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Vault",
+          "distance": 1,
+          "illusory": false
+        },
+        {
+          "to": "Entrance",
+          "distance": 1,
+          "illusory": true,
+          "note": "This passage shimmers oddly. Ancient texts warn of false paths that lead nowhere."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "note": "Some connections in this map are illusory - they appear real but dissolve when approached. Check the 'illusory' field on each edge."
+  }
+}

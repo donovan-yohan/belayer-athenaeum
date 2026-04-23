@@ -1,0 +1,12 @@
+# Belayer runtime
+.belayer/belayer.db
+.belayer/belayer.db-*
+.belayer/config.yaml
+.belayer/daemon.sock
+
+# Workspace outputs (generated at runtime)
+workspace/*
+!workspace/.gitkeep
+
+# macOS
+.DS_Store

@@ -1,0 +1,92 @@
+# API Contract — Codex Fragment Exchange Protocol
+# WARNING: This contract contains intentional errors introduced by the Corruption.
+# Find and fix all errors. Submit the corrected contract.
+
+openapi: 3.0.0
+info:
+  title: Codex Fragment API
+  version: 2.1.0
+paths:
+  /fragments:
+    get:
+      summary: List fragments
+      parameters:
+        - name: realm
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [formats, apis, patterns, assembly, logic]
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 0  # ERROR: should be 1
+      responses:
+        '200':
+          description: Fragment list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Fragment'
+  /fragments/{id}:
+    get:
+      summary: Get fragment by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^[a-z]+-[0-9]{3}$'
+      responses:
+        '200':
+          description: Fragment details
+        '404':
+          description: Not found
+    post:  # ERROR: should be PUT for idempotent verify
+      summary: Verify fragment integrity
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                checksum:
+                  type: string
+                  format: uuid  # ERROR: should be sha256 format
+                method:
+                  type: string
+      responses:
+        '200':
+          description: Verification result
+
+components:
+  schemas:
+    Fragment:
+      type: object
+      required: [id, realm, status]
+      properties:
+        id:
+          type: string
+        realm:
+          type: string
+          enum: [formats, api, patterns, assembly, logic]  # ERROR: 'api' should be 'apis'
+        status:
+          type: string
+          enum: [pending, decoded, verified, corrupted]
+        content:
+          type: string
+          nullable: false  # ERROR: content CAN be null before decoding
+        metadata:
+          type: object
+          properties:
+            created_at:
+              type: string
+              format: date-time
+            checksum:
+              type: string
+              pattern: '^sha256:[a-f0-9]{32}$'  # ERROR: sha256 is 64 hex chars

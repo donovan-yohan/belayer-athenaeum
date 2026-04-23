@@ -1,0 +1,5 @@
+fragment_id: fmt-001, sigil: 0x4a1f, recorded: 2024-01-15T08:23:11Z, energy: 773
+fragment_id: api-003, sigil: 0x9B2C, recorded: 2024-01-15T08:24:02Z, energy: 419
+fragment_id: pat-042, sigil: 0x7E3D, recorded: 2024-01-15T08:25:47Z, energy: 628
+fragment_id: asm-007, sigil: 0x2f8a, recorded: 2024-01-15T08:27:33Z, energy: 951
+fragment_id: log-019, sigil: 0x5D6E, recorded: 2024-01-15T08:29:18Z, energy: 384

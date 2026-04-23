@@ -1,0 +1,2 @@
+Shortest path: Entrance -> Hallway_A -> Chamber_1 -> Archive_Room -> Star_Chart_Room -> Vault_Antechamber -> Vault
+XOR of node values along path: 48
