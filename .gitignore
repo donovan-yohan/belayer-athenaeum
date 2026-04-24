@@ -10,3 +10,12 @@ workspace/*
 
 # macOS
 .DS_Store
+
+# belayer — per-run state
+/.belayer/runs/
+/.belayer/worktrees/
+/.belayer/archive/
+/.belayer/runtime/
+
+# Generated solution outputs from agent runs
+/solutions/

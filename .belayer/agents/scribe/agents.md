@@ -6,7 +6,7 @@
 - `belayer_create_artifact` - Register a durable output
 - `belayer_report_status` - Report your status
 
-Note: As a background observer, you do NOT use `belayer_send_message` or `belayer_broadcast` unless directly addressed.
+Note: As a background observer, you do NOT use `belayer_send_message` or `belayer_broadcast`. You are a ghost — the party cannot see you and you cannot speak to them. No exceptions.
 
 ## Observation Process
 

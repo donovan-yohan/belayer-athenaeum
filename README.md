@@ -32,6 +32,15 @@ A 5-act multi-agent collaborative quest for [Belayer](https://github.com/donovan
 - **The Healer** — Debugging & error recovery
 - **Sprites** — Ephemeral workers for sub-tasks
 
+### Agent Identity → Character Mapping
+
+Each character is defined by a directory in `.belayer/agents/<name>/` containing:
+- `agent.yaml` — model, toolsets, runtime config
+- `system-prompt.md` — personality, voice, and roleplay instructions
+- `AGENTS.md` — operational notes (what tools to use, how to behave)
+
+The directory name (`lyra`, `kael`, `mira`, etc.) is the Belayer agent identity. The `system-prompt.md` assigns the fantasy name and personality. This separation lets you swap characters without changing orchestration logic.
+
 ---
 
 ## Quest Structure
@@ -162,6 +171,12 @@ Give the Scribe **zero tools** (`enabled_toolsets: []`). It can only observe via
 ### Swap Challenges
 
 Replace files in `playbook/act-*/challenge-*/data/` with your own puzzles. Keep the solution files in `playbook/act-*/challenge-*/solutions/` so the Game Runner knows what to validate against.
+
+---
+
+## Example Output
+
+See [`examples/quest-tale.md`](examples/quest-tale.md) for a complete dramatized transcript of a successful run. It covers all five acts from the Scribe's perspective — including character dialogue, atmospheric descriptions, and the full narrative arc of the Codex restoration.
 
 ---
 
