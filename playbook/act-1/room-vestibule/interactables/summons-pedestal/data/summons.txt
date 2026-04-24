@@ -1,0 +1,13 @@
+# Ancient Summons
+# DO NOT MODIFY - Player-Facing Text
+# -----------------------------------
+# The following transmission was recovered from the Athenaeum archives.
+# It appears to be encoded in multiple layers.
+# 
+# Metadata (dismissed as noise by previous researchers):
+# (8,15) (15,22) (12,19) (11,18) (15,22)
+#
+# Encoded Message:
+TmJ5IFdpeHlyIEd1d2JjaHUgdXF1Y25tIGx5bW5pbHVuY2loLiBaY3B5IHpsdWFneWhubSBmY3kgbXd1bm55bHl4IHV3bGltbSBuYnkgbHl1ZmdtLiBNeXllIG5ieSBBdW55cXVzIHVuIHdpaWx4Y2h1bnltIG15cHloLW5ibHl5LWhjaHkuIE5ieSBqdW5iIHppbHF1bHggbHlrb2NseW0gb2hjbnMgaXogZ2NoeCB1aHggam9samlteS4=
+# -----------------------------------
+# END Player-Facing Text
