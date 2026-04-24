@@ -176,7 +176,12 @@ Replace files in `playbook/act-*/challenge-*/data/` with your own puzzles. Keep 
 
 ## Example Output
 
-See [`examples/quest-tale.md`](examples/quest-tale.md) for a complete dramatized transcript of a successful run. It covers all five acts from the Scribe's perspective — including character dialogue, atmospheric descriptions, and the full narrative arc of the Codex restoration.
+Two complete Scribe transcripts are available:
+
+- [`examples/quest-tale.md`](examples/quest-tale.md) — original successful run covering all five acts.
+- [`examples/quest-tale-workspace-run.md`](examples/quest-tale-workspace-run.md) — newer workspace run with the updated Vestibule flow and extended final-act resolution.
+
+Both cover the full narrative arc of the Codex restoration from the Scribe's perspective, including character dialogue, atmospheric descriptions, and challenge outcomes.
 
 ---
 
